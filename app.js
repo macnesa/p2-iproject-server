@@ -13,12 +13,28 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 const {router} = require('./routes') 
-app.use(router)
+app.use(router) 
+// const http = require('http').createServer(app);
+// const io = require("socket.io")(http);
+
+// http.listen(port, () => {
+//   console.log(
+//     `
+// ==========================================
+// ♻️  MACSPOTIFY SERVER launch on port ${port}
+// ==========================================
+//     `
+//   );
+// });
  
-
-
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(
+    `
+==========================================
+♻️  MACSPOTIFY SERVER launch on port ${port}
+==========================================
+    `
+  )
 })
 
 
