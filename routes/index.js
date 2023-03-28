@@ -14,7 +14,7 @@ router.get('/redirect', Controller.redirect)
 
 router.get('/paymentToken', Controller.getMidtransToken)
 
-router.use(auth)
+router.use(auth)  
 
 router.get('/profile', Controller.myProfile)
 
