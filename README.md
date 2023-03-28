@@ -1,9 +1,18 @@
-# **P2-Phase 2 Iproject Hacktiv8 Challenge-Integration-Server**
->REST API | Phase 2 Iproject Hacktiv8 Challenge 
- 
+# **Spotify Insight - server**
+> Implemented with Express.js, Sequelize with REST-API concept
+
+
+# **Installation & Usage:**
+  - Make .env file that refers to the .env.example 
+  - Create your own application on https://developer.spotify.com/dashboard and copy client_id as well client_secret to .env. Using spotify api needs some kind of learning curve. i assume you already know how to deal with it 
+  - if midtrans doesnt matter to you right now, you can fill it with random numbers 
+  
+  - Run `npm install && npx sequelize db:create && npx sequelize db:migrate && npx nodemon app `  
+
+   
 
 # **Endpoints:**
-For staff and admins:
+Available Endpoints:
 - `/redirect  ( GET )`  
 
 - `/paymentToken ( GET )`
@@ -16,9 +25,17 @@ For staff and admins:
 
 - `/recently ( GET )` 
 
+- `/nowPlaying ( GET )` 
+
 - `/findSongs (GET , POST)`
 
+- `/topTracksByArtist ( GET )`
+
+- `/tracksByTopOneTrack ( GET )`
+
 - `/topGlobal  ( GET )` 
+
+- `/topLocal  ( GET )` 
 
 - `/subcribed  ( PATCH )` 
 
