@@ -21,7 +21,7 @@ app.use(router)
 //   console.log(
 //     `
 // ==========================================
-// ♻️  MACSPOTIFY SERVER launch on port ${port}
+// ♻️  MAC SPOTIFY SERVER launch on port ${port}
 // ==========================================
 //     `
 //   );
@@ -31,7 +31,7 @@ app.listen(port, () => {
   console.log(
     `
 ==========================================
-♻️  MACSPOTIFY SERVER launch on port ${port}
+♻️  MAC SPOTIFY SERVER launch on port ${port}
 ==========================================
     `
   )
